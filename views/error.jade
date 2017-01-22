@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  .right_col(role='main')
+    div
+      .page-title
+      .clearfix
+      .row
+        .col-md-12.col-sm-12.col-xs-12
+          .x_panel
+            .x_title
+              h2 #{title}
+              .clearfix
+                  .x_content
+                  .col-md-12
+                    .col-middle
+                      .text-center
+                        h1.error-number=error.status
+                        h2.page-title=message
+                        br
+                        p
+                          | #{error.stack}
